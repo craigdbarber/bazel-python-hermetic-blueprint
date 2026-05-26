@@ -95,7 +95,7 @@ bazel run //tools/format
 To check formatting without modifying files (e.g., for CI):
 
 ```bash
-bazel run //tools/format -- --check
+bazel run //tools/format:format.check
 ```
 
 ### Adding Dependencies

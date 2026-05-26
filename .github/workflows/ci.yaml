@@ -25,7 +25,7 @@ jobs:
         run: bazel build --config=lint //...
 
       - name: Check Formatting
-        run: bazel run //tools/format -- --check
+        run: bazel run //tools/format:format.check
 
       - name: Run Unit Tests
         run: bazel test //...
